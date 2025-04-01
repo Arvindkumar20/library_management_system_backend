@@ -185,6 +185,12 @@ app.post('/register', async (req, res) => {
     }
 });
 
+
+app.get("/",(req,res)=>{
+return res.json({
+    message:"hello"
+})
+});
 // User login
 app.post('/login', async (req, res) => {
     try {
